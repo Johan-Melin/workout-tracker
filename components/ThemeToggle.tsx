@@ -18,12 +18,12 @@ export function ThemeToggle() {
           {colorScheme === 'dark'
             ? ({ pressed }) => (
                 <View className={cn('px-0.5', pressed && 'opacity-50')}>
-                  <Ionicons name="sunny" size={24} color={COLORS.white} />,
+                  <Ionicons name="sunny" size={24} color={COLORS.white} />
                 </View>
               )
             : ({ pressed }) => (
                 <View className={cn('px-0.5', pressed && 'opacity-50')}>
-                  <Ionicons name="moon" size={24} color={COLORS.black} />,
+                  <Ionicons name="moon" size={24} color={COLORS.black} />
                 </View>
               )}
         </Pressable>
