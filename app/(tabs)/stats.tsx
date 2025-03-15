@@ -6,9 +6,9 @@ import { Text } from '~/components/nativewindui/Text';
 export default function Home() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Tab Two' }} />
+      <Stack.Screen options={{ title: 'Stats' }} />
       <View style={styles.container}>
-        <Text className="text-2xl">Two</Text>
+        <Text className="text-2xl">Stats</Text>
       </View>
     </>
   );
