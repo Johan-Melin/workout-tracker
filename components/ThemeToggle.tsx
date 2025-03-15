@@ -1,4 +1,4 @@
-import { Icon } from '@roninoss/icons';
+import { Ionicons } from '@expo/vector-icons';
 import { Pressable, View } from 'react-native';
 import Animated, { LayoutAnimationConfig, ZoomInRotate } from 'react-native-reanimated';
 
@@ -18,12 +18,12 @@ export function ThemeToggle() {
           {colorScheme === 'dark'
             ? ({ pressed }) => (
                 <View className={cn('px-0.5', pressed && 'opacity-50')}>
-                  <Icon namingScheme="sfSymbol" name="moon.stars" color={COLORS.white} />
+                  <Ionicons name="sunny" size={24} color={COLORS.white} />,
                 </View>
               )
             : ({ pressed }) => (
                 <View className={cn('px-0.5', pressed && 'opacity-50')}>
-                  <Icon namingScheme="sfSymbol" name="sun.min" color={COLORS.black} />
+                  <Ionicons name="moon" size={24} color={COLORS.black} />,
                 </View>
               )}
         </Pressable>
